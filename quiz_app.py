@@ -39,7 +39,7 @@ def generate_certificate(name, email, department, score):
     logo_width, logo_height = 120, 100
     x = (width - logo_width) / 2
     y = height - 280
-    c.drawImage(r"C:\Users\Lokesh\Downloads\techmaa_org.jpg", x, y, width=logo_width, height=logo_height, mask='auto')
+    c.drawImage(r"techmaa_org.jpg", x, y, width=logo_width, height=logo_height, mask='auto')
 
     c.setFont("Helvetica", 15)
     c.drawCentredString(width/2, y - 70, f"This certifies that candidate has demonstrated the ")
@@ -76,7 +76,7 @@ if "user" not in st.session_state:
 
 if st.session_state.page == "login":
     st.title("Welcome to Quiz by Techmaa Org.")
-    img = Image.open(r"C:\Users\Lokesh\Downloads\techmaa_org.jpg")
+    img = Image.open(r"techmaa_org.jpg")
     img = img.resize((70,70)) 
 
     st.image(img)
